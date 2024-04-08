@@ -31,7 +31,7 @@ pipeline {
         } 
         stage('Deploy-to-Dev') {
             steps {
-                build wait: false, job: 'pipeline as code'
+                build wait: false, job: 'pipeline as code -test'
             }
         } 
     }
